@@ -57,7 +57,8 @@
       {"name": "Web Application", "port": 3000}
     ],
     "uilayout": "editor-iframe-split",
-    "uisettings": "html"
+    "uisettings": "html",
+    "exclusionPatterns": ["*/server*"]
   },
   "backend": {
     "imageid": "node",
