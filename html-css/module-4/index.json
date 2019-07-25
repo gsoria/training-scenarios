@@ -46,6 +46,13 @@
         "answer": "step7-answer.md"
       }
     ],
+    "assets": {
+      "client": [
+        {
+          "file": "katacoda.png", "target": "~/tutorial"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
