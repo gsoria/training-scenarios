@@ -57,7 +57,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["layout.html"],
+  "files": ["layout.html", "katacoda.png"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
