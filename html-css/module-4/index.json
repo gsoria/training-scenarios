@@ -58,7 +58,7 @@
     ],
     "uilayout": "editor-iframe-split",
     "uisettings": "html",
-    "exclusionPatterns": ["*/server*"]
+    "exclusionPatterns": ["*server*"]
   },
   "backend": {
     "imageid": "node",
