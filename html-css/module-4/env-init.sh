@@ -1,4 +1,4 @@
-curl -L https://www.dropbox.com/s/u1ofp8ch795zkvr/pf-express.tar.gz?dl=0 > ~/pf-express.tar.gz
+curl -L https://drive.google.com/open?id=1iSRcWpch1yoDKeapVOiuEdo_nMmS1Fem > ~/pf-express.tar.gz
 tar -xvzf ~/pf-express.tar.gz -C ~/tutorial
 cd ~/tutorial
 npm install
