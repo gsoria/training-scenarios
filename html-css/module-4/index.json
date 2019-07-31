@@ -49,7 +49,7 @@
     "assets": {
       "client": [
         {
-          "file": "katacoda.png", "target": "~/tutorial", "chmod": "+r"
+          "file": "katacoda.png", "target": "~/tutorial/assets/images/", "chmod": "+r"
         }
       ]
     },
