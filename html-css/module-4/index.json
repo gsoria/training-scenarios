@@ -65,7 +65,8 @@
     ],
     "uilayout": "editor-iframe-split",
     "uisettings": "html",
-    "exclusionPatterns": ["*server*"]
+    "exclusionPatterns": ["*server*"],
+    "hideHiddenFiles": true
   },
   "backend": {
     "imageid": "node",
