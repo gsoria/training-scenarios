@@ -1,4 +1,4 @@
-curl -L https://www.dropbox.com/s/dlpi7z1xjaiz908/pf-express.tar.gz?dl=0 > ~/pf-express.tar.gz
+curl -L https://www.dropbox.com/s/whftx6hotgwczsm/pf-express-lr.tar.gz?dl=0 > ~/pf-express.tar.gz
 mkdir ~/tutorial
 tar -xvzf ~/pf-express.tar.gz -C ~/tutorial
 cd ~/tutorial
