@@ -12,6 +12,7 @@ a. Copy code to the editor:
     &lt;div class=&quot;pf-c-modal-box__body&quot;&gt;
       This is a Patternfly Modal
     &lt;/div&gt;
+    &lt;img src=&quot;images/katacoda.png&quot; height=&quot;50&quot; width=&quot;50&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>

@@ -57,7 +57,7 @@
       "text": "finish.md"
     }
   },
-  "files": ["layout.html", "katacoda.png"],
+  "files": ["layout.html"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
@@ -66,10 +66,7 @@
     "uilayout": "editor-iframe-split",
     "uisettings": "html",
     "exclusionPatterns": ["*server*"],
-    "hideHiddenFiles": true,
-    "terminals": [
-      {"name": "Terminal", "target": "host01"}
-    ]
+    "hideHiddenFiles": true
   },
   "backend": {
     "imageid": "node",
