@@ -66,7 +66,10 @@
     "uilayout": "editor-iframe-split",
     "uisettings": "html",
     "exclusionPatterns": ["*server*"],
-    "hideHiddenFiles": true
+    "hideHiddenFiles": true,
+    "terminals": [
+      {"name": "Terminal", "target": "host01"}
+    ]
   },
   "backend": {
     "imageid": "node",
