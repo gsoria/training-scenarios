@@ -58,6 +58,7 @@
     }
   },
   "files": ["layout.html"],
+  "asyncFiles": ["layout.html"],
   "environment": {
     "showdashboard": true,
     "dashboards": [
