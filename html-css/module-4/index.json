@@ -3,6 +3,7 @@
   "description": "This course will cover Patternfly Layouts. ",
   "difficulty": "beginner",
   "time": "20 minutes",
+  "authenticated": false,
   "details": {
     "intro": {
       "text": "intro.md",
