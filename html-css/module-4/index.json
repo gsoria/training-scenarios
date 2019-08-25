@@ -1,5 +1,6 @@
 {
   "title": "Patternfly Layouts",
+  "tags":["patternfly", "react"],
   "description": "This course will cover Patternfly Layouts. ",
   "difficulty": "beginner",
   "time": "20 minutes",
@@ -72,6 +73,5 @@
   "backend": {
     "imageid": "node",
     "port": 3000
-  },
-  "tags":["patternfly", "react"]
+  }
 }
