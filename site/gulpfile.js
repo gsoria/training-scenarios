@@ -3,6 +3,9 @@ const browserSync = require('browser-sync');
 const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
 const server = browserSync.create();
+const request = require('request');
+const fs = require('fs')
+var SERVICE_URL='http://localhost:3050/';
 
 const paths = {
   html: {
@@ -22,6 +25,7 @@ function html() {
 
 function reload(done) {
   server.reload();
+  console.log("Browsers reloaded");
   done();
 }
 
@@ -52,7 +56,33 @@ function serve(done) {
   done();
 }
 
-const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload));
+
+function httpPost(cb) {
+  var s = fs.readFileSync('/tmp/socket','utf8')
+  if (s){
+    console.log ('Retrieved socket', s);
+    const headers = {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
+    const options = {
+      url: SERVICE_URL,
+      method: 'POST',
+      headers: headers  }
+
+    request.post(options.url, {
+      form: {
+        message: 'open',
+        socket: s
+      }
+    }, function(err, res) {
+        console.log(err, res);
+        cb();
+    });
+  }
+}
+
+const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload, httpPost));
 const sassWatch = () => gulp.watch(paths.sass.src, gulp.series(style, reload));
 
 const dev = gulp.series(html, fileInclude, style, serve, gulp.parallel(sassWatch, watch));
