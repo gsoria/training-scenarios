@@ -25,7 +25,6 @@ function html() {
 
 function reload(done) {
   server.reload();
-  console.log("Browsers reloaded");
   done();
 }
 
@@ -57,7 +56,7 @@ function serve(done) {
 }
 
 
-function httpPost(cb) {
+function callEventService(cb) {
   var s = fs.readFileSync('/tmp/socket','utf8')
   if (s){
     console.log ('Retrieved socket', s);
@@ -72,17 +71,19 @@ function httpPost(cb) {
 
     request.post(options.url, {
       form: {
-        message: 'open',
+        message: 'reload-finished',
         socket: s
       }
     }, function(err, res) {
-        console.log(err, res);
+        if(err){
+          console.log(err, res);
+        }
         cb();
     });
   }
 }
 
-const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload, httpPost));
+const watch = () => gulp.watch(paths.html.src, gulp.series(html, fileInclude, reload, callEventService));
 const sassWatch = () => gulp.watch(paths.sass.src, gulp.series(style, reload));
 
 const dev = gulp.series(html, fileInclude, style, serve, gulp.parallel(sassWatch, watch));
