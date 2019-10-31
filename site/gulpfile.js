@@ -71,7 +71,7 @@ function callEventService(cb) {
 
     request.post(options.url, {
       form: {
-        message: 'reload-finished',
+        message: 'hideprogressbar',
         socket: s
       }
     }, function(err, res) {
