@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 const server = browserSync.create();
 const request = require('request');
 const fs = require('fs')
-var SERVICE_URL='https://4cf093bb.ngrok.io';
+var SERVICE_URL='https://environment-events.katacoda.com';
 
 const paths = {
   html: {
