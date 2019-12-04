@@ -8,4 +8,4 @@
 #touch ./src/app.css
 #echo "Starting... this will block the rest of the commands from running..."
 #npm start
-docker run dd-area-charts
+docker run ddonahue/area-charts
