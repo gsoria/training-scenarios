@@ -69,8 +69,7 @@
       "text": "finish.md"
     }
   },
-
-  "files": [],
+  "asyncFiles": ["src/App.js"],
   "environment": {
     "showdashboard": true,
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
