@@ -73,18 +73,13 @@
   "files": [],
   "environment": {
     "showdashboard": true,
+    "imageid": "ddonahue/area-charts",
+    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}],
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "autoFormatEnable": false,
-    "dashboards": [
-      {"name": "Web Application", "port": 3000}
-    ],
-    "uilayout": "editor-iframe-split",
+    "uilayout": "terminal-iframe",
     "uisettings": "javascript",
     "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
     "hideHiddenFiles": true
-  },
-  "backend": {
-    "imageid": "ddonahue/area-charts",
-    "port": 3000
   }
 }
