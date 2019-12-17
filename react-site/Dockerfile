@@ -1,4 +1,4 @@
-FROM node
+FROM node:slim
 
 ARG HOME_DIR=/root
 ARG TUTORIAL_DIR=${HOME_DIR}/tutorial
@@ -18,4 +18,4 @@ RUN npm install
 RUN npm install @patternfly/react-tokens
 RUN npm install @patternfly/react-charts
 
-CMD npm start
+CMD ["npm", "start"]
