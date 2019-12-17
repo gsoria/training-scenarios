@@ -84,7 +84,7 @@
     "hideHiddenFiles": true
   },
   "backend": {
-    "imageid": "ddonahue/area-charts",
+    "imageid": "node",
     "port": 3000
   }
 }
