@@ -1,1 +1,5 @@
-In this scenario, you will learn how to use the PatternFly 4 React Toolbar component to build a table filter.
+In this tutorial, build a toolbar filter and attach it to a table.
+
+
+
+Toolbars allow users to manage and manipulate a data set. For example, data can be presented in any valid presentation, a table, a list, or a data visualization (chart). The PatternFly toolbar component is a flexible layout system that accommodates a variety of configurations.

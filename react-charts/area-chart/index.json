@@ -5,43 +5,38 @@
   "time": "10 minutes",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "code": "env-init.sh"
+      "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Introducing PatternFly React area charts",
-        "text": "step1.md"
-      },
-      {
         "title": "Customize with CSS",
-        "text": "step2.md",
-        "verify": "step2-verify.sh",
-        "answer": "step2-answer.md"
+        "text": "step1.md",
+        "verify": "step1-verify.sh",
+        "answer": "step1-answer.md"
       },
       {
         "title": "Create a simple chart",
-        "text": "step3.md"
+        "text": "step2.md"
       },
       {
         "title": "Add multiple datasets",
-        "text": "step4.md"
+        "text": "step3.md"
       },
       {
         "title": "Add tooltips",
-        "text": "step5.md"
+        "text": "step4.md"
       },
       {
         "title": "Add axis labels",
-        "text": "step6.md"
+        "text": "step5.md"
       },
       {
         "title": "Add legend",
-        "text": "step7.md"
+        "text": "step6.md"
       },
       {
         "title": "Change the theme",
-        "text": "step8.md"
+        "text": "step7.md"
       }
     ],
     "assets": {
@@ -77,18 +72,13 @@
   "files": [],
   "environment": {
     "showdashboard": true,
+    "imageid": "patternfly-react-site-charts",
+    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}],
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "autoFormatEnable": false,
-    "dashboards": [
-      {"name": "Web Application", "port": 3000}
-    ],
-    "uilayout": "editor-iframe-split",
+    "uilayout": "terminal-iframe",
     "uisettings": "javascript",
     "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
     "hideHiddenFiles": true
-  },
-  "backend": {
-    "imageid": "node",
-    "port": 3000
   }
 }
