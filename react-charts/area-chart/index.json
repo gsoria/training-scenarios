@@ -5,8 +5,7 @@
   "time": "10 minutes",
   "details": {
     "intro": {
-      "text": "intro.md",
-      "code": "env-init.sh"
+      "text": "intro.md"
     },
     "steps": [
       {
@@ -73,7 +72,7 @@
   "files": [],
   "environment": {
     "showdashboard": true,
-    "imageid": "ddonahue/area-charts",
+    "imageid": "patternfly-react-site-charts",
     "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}],
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "autoFormatEnable": false,
