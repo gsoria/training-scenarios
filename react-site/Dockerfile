@@ -9,7 +9,7 @@ COPY public ${TUTORIAL_DIR}/public
 COPY src ${TUTORIAL_DIR}/src
 
 ENV CHOKIDAR_USEPOLLING=true
-RUN mkdir -p ./src/app.css
+RUN touch ${TUTORIAL_DIR}/src/app.css
 
 COPY package.json .
 COPY package-lock.json .
