@@ -5,7 +5,8 @@
   "time": "10 minutes",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "env-init.sh"
     },
     "steps": [
       {
