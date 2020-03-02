@@ -69,17 +69,21 @@
       "text": "finish.md"
     }
   },
-
-  "files": [],
+  "asyncFiles": ["src/App.js"],
   "environment": {
     "showdashboard": true,
-    "imageid": "patternfly-react-site-charts",
-    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}],
     "delayToSaveFileAfterStopTypingMilliseconds": 2000,
     "autoFormatEnable": false,
-    "uilayout": "terminal-iframe",
+    "dashboards": [
+      {"name": "Web Application", "port": 3000}
+    ],
+    "uilayout": "editor-iframe-split",
     "uisettings": "javascript",
     "exclusionPatterns": ["._*", "package.json", "package-lock.json", "node_modules*", "public*", "serviceWorker*"],
     "hideHiddenFiles": true
+  },
+  "backend": {
+    "imageid": "patternfly-react-site-charts",
+    "port": 3000
   }
 }
