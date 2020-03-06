@@ -83,7 +83,7 @@
     "hideHiddenFiles": true
   },
   "backend": {
-    "imageid": "patternfly-react-site-charts",
+    "imageid": "patternfly-react-site",
     "port": 3000
   }
 }

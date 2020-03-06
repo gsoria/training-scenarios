@@ -15,7 +15,9 @@ COPY package.json .
 COPY package-lock.json .
 
 RUN npm install
+RUN npm install @patternfly/react-core
 RUN npm install @patternfly/react-tokens
 RUN npm install @patternfly/react-charts
+RUN npm install @patternfly/react-table
 
 CMD ["npm", "start"]
