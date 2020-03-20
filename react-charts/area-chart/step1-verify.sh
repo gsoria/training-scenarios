@@ -2,13 +2,9 @@
 
 ## Ensure user added CSS selector to app.css
 verify() {
-  grep -i "chart-container" ./src/app.css >> /dev/null 2>&1
-  if [ "$?" -eq 0 ]; then
-    echo "done"
-    exit 0
-  fi
+ more ./src/app.css;
+ grep -q "chart-container" ./src/app.css; [ $? -eq 0 ] && echo "done" || echo "try-again"
 }
-
 verify
 
 ## Wait for possible file update and try again
